@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seatify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo-wrap">
+      <span class="logo-dot"></span>
+      <span class="logo-text">Seatify</span>
+    </div>
+    <div class="tagline">
+      Real-time course seat watcher (demo)
+    </div>
+    <nav class="nav-links">
+      <a href="./index.html">App</a>
+      <a href="./portal/index.html" target="_blank">Sample Uni Portal</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <div id="notifications" class="notifications"></div>
+
+  <main class="page">
+    <section class="panel panel-left">
+      <div class="panel-header">
+        <h1>All courses</h1>
+        <p class="panel-sub">Pick what you actually care about, the rest can suffer</p>
+      </div>
+      <div id="course-list" class="course-list"></div>
+    </section>
+
+    <section class="panel panel-right">
+      <div class="panel-header">
+        <h2>My watchlist</h2>
+        <p class="panel-sub">These are the ones I am currently watching</p>
+      </div>
+      <div id="watchlist" class="watchlist-empty">
+        <p>You are not watching anything yet. Click "watch" on a course to start.</p>
+      </div>
+    </section>
+  </main>
+
+  <section id="about" class="about">
+    <h3>What this actually is</h3>
+    <p>
+      This is a demo I made to keep track of course seats in a simple way.
+      It does not connect to any real university system. It is just a front-end simulation using fake data.
+    </p>
+    <p>
+      In a real version, there would be a backend checking the actual portal and sending real notifications.
+      Here I just change the data in JavaScript on a timer.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <small>
+      Demo only. No real student data, no real university connection. Made for my portfolio.
+    </small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,167 @@
+:root {
+  --bg:#0b1120;
+  --card:#020617;
+  --border:#1f2937;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#38bdf8;
+  --danger:#f97373;
+  --success:#4ade80;
+  --wait:#facc15;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at top,#1f2937,#020617 55%,#020617);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+a {
+  color:var(--accent);
+}
+
+.portal-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  background:rgba(15,23,42,0.9);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px);
+}
+
+.portal-logo {
+  width:30px;
+  height:30px;
+  border-radius:8px;
+  background:radial-gradient(circle at 30% 30%,#e0f2fe,var(--accent));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#0b1120;
+  box-shadow:0 0 14px rgba(56,189,248,0.8);
+}
+
+.portal-title-wrap h1 {
+  font-size:16px;
+}
+
+.portal-title-wrap p {
+  font-size:11px;
+  color:var(--muted);
+}
+
+.portal-nav {
+  display:flex;
+  gap:14px;
+  font-size:13px;
+}
+
+.portal-nav a {
+  padding:6px 8px;
+  border-radius:999px;
+}
+
+.portal-main {
+  flex:1;
+  padding:18px 20px 20px;
+  display:grid;
+  grid-template-columns:minmax(0,3.2fr) minmax(0,1.3fr);
+  gap:16px;
+}
+
+.portal-card {
+  background:rgba(15,23,42,0.9);
+  border-radius:16px;
+  border:1px solid var(--border);
+  padding:14px 14px 16px;
+  box-shadow:0 16px 28px rgba(0,0,0,0.45);
+}
+
+.portal-card h2 {
+  font-size:15px;
+}
+
+.hint {
+  font-size:12px;
+  color:var(--muted);
+}
+
+.table-wrap {
+  border-radius:12px;
+  border:1px solid var(--border);
+  overflow:hidden;
+  margin-top:4px;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  padding:8px 9px;
+  border-bottom:1px solid var(--border);
+  text-align:left;
+  font-size:12px;
+}
+
+th {
+  font-size:11px;
+  color:var(--muted);
+}
+
+tbody tr:nth-child(even) {
+  background:rgba(15,23,42,0.7);
+}
+
+.pill {
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:11px;
+}
+
+.pill.open {
+  background:rgba(22,163,74,0.15);
+  color:var(--success);
+  border:1px solid rgba(34,197,94,0.6);
+}
+
+.pill.full {
+  background:rgba(220,38,38,0.15);
+  color:var(--danger);
+  border:1px solid rgba(248,113,113,0.7);
+}
+
+.pill.wait {
+  background:rgba(250,204,21,0.12);
+  color:var(--wait);
+  border:1px solid rgba(250,204,21,0.6);
+}
+
+.portal-note {
+  background:rgba(15,23,42,0.85);
+  border-radius:16px;
+  border:1px dashed var(--border);
+  padding:14px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.portal-footer {
+  padding:10px 18px 18px;
+  font-size:11px;
+  color:var(--muted);
+}
+
+
